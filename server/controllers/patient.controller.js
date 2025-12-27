@@ -36,6 +36,7 @@ const getPatientCompleteData = async (req, res) => {
           pid: patient.patient_id,
           pname: patient.patient_name,
           age: patient.age,
+          gender: patient.gender,
         },
         allergies: allergiesResult.rows.map((item) => item.allergen_code),
         labs: labResults.rows.map((lab) => {
